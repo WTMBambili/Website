@@ -19,13 +19,11 @@ body{
 
 }
 
-/* projectS */
+/* projects */
 .project {
-  position: relative;
-  overflow: hidden;
-  padding: 20px;
-
-  
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
 }
 
 .project-category {
