@@ -1,35 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-body{
+body {
   min-height: 100vh;
 }
-:root{
-  --color-background:#ebe9e9;
-  --color-card-title:#3E7FFF;
-  --color-icon:#3E7FFF;
-  --color-text:#373F41;
-  --color-card:#FFFFFF;
-  --color-html:#FF5722;
-  --color-css:#3F51B5;
-
+:root {
+  --color-background: #ebe9e9;
+  --color-card-title: #3e7fff;
+  --color-icon: #3e7fff;
+  --color-text: #373f41;
+  --color-card: #ffffff;
+  --color-html: #ff5722;
+  --color-css: #3f51b5;
 }
 
 /* navigation bar */
-header{
+header {
   width: 100%;
   height: 70px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   position: relative;
 }
-.responsive{
+.responsive {
   display: none;
 }
-nav{
+nav {
   width: 80%;
   height: 100%;
   margin: 0 auto;
@@ -37,22 +36,20 @@ nav{
   justify-content: space-between;
   align-items: center;
 }
-.logo{
+.logo {
   font-size: 20px;
   color: var(--color-card-title);
 }
-ul{
-    display: flex;
+ul {
+  display: flex;
   justify-content: center;
   align-items: center;
-
 }
-ul li{
+ul li {
   list-style: none;
   margin-right: 20px;
-
 }
-ul li a{
+ul li a {
   text-decoration: none;
   color: #444;
   font-size: 20px;
@@ -60,7 +57,7 @@ ul li a{
   transition: 0.5s;
   position: relative;
 }
-ul li a::before{
+ul li a::before {
   content: "";
   position: absolute;
   top: 100%;
@@ -71,78 +68,74 @@ ul li a::before{
   transition: 0.5s;
   background: var(--color-card-title);
 }
-ul li a:hover::before{
- opacity: 1;
- 
+ul li a:hover::before {
+  opacity: 1;
 }
-@media screen and (max-width:600px) {
- header{
-   height: 100%;
- }
- nav{
-   justify-content: space-between;
-   align-items: flex-start;
-   padding: 0 0 20px 0;
+@media screen and (max-width: 600px) {
+  header {
+    height: 100%;
+  }
+  nav {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 0 20px 0;
+  }
+  nav .logo {
+    margin-top: 30px;
+  }
+  nav .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .nav-links {
+    display: none;
+    transform: 0.5s;
+  }
+  .nav-links li {
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 25px;
 
- }
- nav .logo{
-   margin-top: 30px;
- 
- }
- nav .logo img{
-   width: 50px;
-   height: 50px;
- }
- .nav-links{
-   display: none;
-   transform: 0.5s;
- }
- .nav-links li{
-   margin-bottom: 50px;
-   font-weight: 500;
-   font-size: 25px;
-
-   letter-spacing: 1px;
- }
- .responsive{
-  display: block;
-   width: 30px;
-   height: 30px;
-   background: transparent;
-   position: absolute;
-   top: 30px;
-   right: 30px;
-   animation: bounce 2s ease-in-out infinite ;
- }
- .responsive::before{
-   content: "\f0c9";
-   font-family: fontAwesome;
-   font-size: 20px;
-   z-index: 1000;
-   
- }
- @keyframes bounce {
-   0%{
-     transform: scale(1);
-   }
-   50%{
-     transform: scale(1.15);
-   }
-   100%{
-     transform: scale(1);
-   }
- }
- .nav-links.active{
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   width: 500px;
-   height: 600px;
-   margin-top: 200px;
- }
- .responsive.active::before {
-   content: "\f00d"
- } 
+    letter-spacing: 1px;
+  }
+  .responsive {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    animation: bounce 2s ease-in-out infinite;
+  }
+  .responsive::before {
+    content: "\f0c9";
+    font-family: fontAwesome;
+    font-size: 20px;
+    z-index: 1000;
+  }
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 500px;
+    height: 600px;
+    margin-top: 200px;
+  }
+  .responsive.active::before {
+    content: "\f00d";
+  }
 }
 
 /* home */
@@ -151,47 +144,52 @@ ul li a:hover::before{
   margin-top: 7%;
   justify-content: space-between;
 }
-
 .home-img {
-  width: 25%;
+  width: 40%;
   margin-right: 10%;
 }
 .home-image {
   width: 100%;
+  height: 280px;
+  border: 1px solid #222;
 }
 
 .home-text {
   padding-left: 10%;
   padding-right: 10%;
-  width: 25%;
+  width: 33%;
+  max-width: 300px;
   display: grid;
   align-items: center;
-  /* margin-top: 10%; */
+  margin-bottom: 100px;
 }
 
 .home-text-content {
-  height: 50%;
   display: grid;
 }
-
+.home-text-content h2 {
+  line-height: 1.5em;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
 .learn-btn {
   /* margin-top: 10%; */
   color: white;
-  background-color: #3E7FFF;
+  background-color: #3e7fff;
   width: 7.5rem;
   height: 3rem;
   border-radius: 10px;
-  border-color: #3E7FFF;
+  border-color: #3e7fff;
+  margin-top: 20px;
 }
-
 
 /* projects */
 .project {
-    position: relative;
-    overflow: hidden;
-    position: relative;
+  position: relative;
+  overflow: hidden;
+  position: relative;
   transition: 0.5s;
-    padding: 20px;
+  padding: 20px;
 }
 
 .project-category {
@@ -208,7 +206,7 @@ ul li a:hover::before{
   overflow-x: auto;
   scroll-behavior: smooth;
   background: var(--color-background);
- padding: 20px 20px;
+  padding: 20px 20px;
 }
 
 .project-container::-webkit-scrollbar {
@@ -223,7 +221,7 @@ ul li a:hover::before{
   margin-right: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
 
@@ -261,104 +259,102 @@ ul li a:hover::before{
   opacity: 1;
 }
 
-.project-card .title{
+.project-card .title {
   text-align: center;
   margin: 15px 0;
 }
-.project-card .title h3{
+.project-card .title h3 {
   font-size: 22px;
   font-weight: 600;
   letter-spacing: 1px;
   color: var(--color-card-title);
   /* line-height: 20px; */
 }
-.project-card p{
+.project-card p {
   text-align: center;
   line-height: 20px;
   margin-bottom: 20px;
   color: var(--color-text);
   font-weight: 500;
 }
-.project-card .imgBox{
+.project-card .imgBox {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
-.project-card .imgBox img{
-  
+.project-card .imgBox img {
   width: 250px;
-  height: 250px
+  height: 250px;
 }
-.project-card ul{
+.project-card ul {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
-.project-card ul li{ 
+.project-card ul li {
   width: 25px;
   list-style: none;
   z-index: 1;
   margin: 20px 7px;
 }
-.project-card ul li .fa{
+.project-card ul li .fa {
   font-size: 24px;
   z-index: 1;
   transition: 0.3s ease-in-out;
 }
 
-.project-card ul li .fa:hover{
+.project-card ul li .fa:hover {
   transform: scale(1.15);
 }
 
-.project-card ul li .fa-html5{
+.project-card ul li .fa-html5 {
   color: var(--color-html);
 }
-.project-card ul li .fa-css3{
+.project-card ul li .fa-css3 {
   color: var(--color-css);
 }
 
-.project-card .link{
+.project-card .link {
   width: 100%;
   text-align: center;
   margin: 17px 0;
 }
-.project-card .link a{
+.project-card .link a {
   text-decoration: none;
   color: var(--color-card-title);
   font-size: 17px;
   font-weight: 500;
   transition: 0.5s;
 }
-.project-card a:hover{
+.project-card a:hover {
   text-decoration: underline;
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width: 1000px) {
   .project-card {
     width: 270px;
     padding: 19px 14px;
     margin-right: 26px;
     margin-top: 10px;
     box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+  }
+  .project-card p {
+    margin-bottom: 13px;
+  }
+  .project-card .imgBox img {
+    width: 200px;
+    height: 200px;
+  }
+  .project-card .link {
+    margin: 0px 0;
+  }
+  .project-card ul li .fa {
+    font-size: 20px;
+  }
 }
-.project-card p {
-  margin-bottom: 13px;
-}
-.project-card .imgBox img {
-  width: 200px;
-  height: 200px;
-}
-.project-card .link {
-  margin: 0px 0;
-}
-.project-card ul li .fa {
-  font-size: 20px;
-}
-}
-@media screen and (max-width:850px){
+@media screen and (max-width: 850px) {
   .project-card {
     width: 230px;
   }
@@ -371,31 +367,168 @@ ul li a:hover::before{
   .project-card .imgBox img {
     width: 150px;
     height: 150px;
+  }
+  .project-card ul li .fa {
+    font-size: 16px;
+  }
+  .project-card ul li {
+    margin: 16px 1px;
+  }
+  .project-card .link a {
+    font-size: 14px;
+  }
 }
-.project-card ul li .fa {
-  font-size: 16px;
-}
-.project-card ul li {
-  margin: 16px 1px;
-}
-.project-card .link a {
-  font-size: 14px;
-}
-}
-@media screen and (max-width:660px){
+@media screen and (max-width: 660px) {
   .project-card {
     width: 200px;
-}
-.project-category {
+  }
+  .project-category {
     font-size: 29px;
+  }
 }
-}
-@media screen and (max-width:550px){
+@media screen and (max-width: 550px) {
   .project-card {
     width: 169px;
-
-}
-.project-category {
+  }
+  .project-category {
     font-size: 23px;
+  }
 }
+
+/* ========UPCOMING EVENT SECTION================ */
+.upcoming-events {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 100%;
+  overflow-x: hidden;
+}
+.upcoming-events .title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.upcoming-events .title h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+.upcoming-events .card-part {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.upcoming-events .card-part .cardBox {
+  width: 280px;
+  height: 250px;
+  background: rgba(198, 194, 194, 0.2);
+  margin-bottom: 10px;
+  padding: 8px 12px 15px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.upcoming-events .card-part .cardBox:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.upcoming-events .cardBox .card-title {
+  width: 100%;
+  text-align: center;
+}
+.upcoming-events .cardBox .card-title h3 {
+  font-size: 23px;
+  color: var(--color-card-title);
+  letter-spacing: 0.05em;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.upcoming-events .cardBox .card-title span {
+  font-size: 18px;
+  font-weight: 500;
+}
+.upcoming-events .cardBox .card-title span i {
+  color: var(--color-card-title);
+  margin-right: 5px;
+}
+.upcoming-events .cardBox .card-title span a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+.upcoming-events .card-part p {
+  font-size: 15px;
+  color: var(--color-text);
+  width: 100%;
+  text-align: center;
+}
+.upcoming-events .cardBox .btn .register {
+  padding: 7px 22px;
+  color: var(--color-card);
+  background-color: var(--color-card-title);
+  outline: none;
+  border: 1px solid var(--color-card-title);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.5s ease-in-out;
+}
+.upcoming-events .cardBox .btn .register:hover {
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 1047px) {
+  .upcoming-events .card-part {
+    margin-right: 150px;
+  }
+}
+@media screen and (max-width: 986px) {
+  .upcoming-events .card-part {
+    margin-right: 173px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .upcoming-events .card-part {
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20;
+  }
+}
+@media screen and (max-width: 750px) {
+  .upcoming-events .card-part .cardBox {
+    width: 250px;
+    height: 230px;
+  }
+  .upcoming-events .title h2 {
+    font-size: 25px;
+  }
+  .upcoming-events .cardBox .card-title h3 {
+    font-size: 19px;
+  }
+  .upcoming-events .cardBox .card-title span {
+    font-size: 16px;
+  }
+  .upcoming-events .cardBox .card-title span a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .upcoming-events .card-part {
+    margin-right: 98px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .upcoming-events .card-part {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
