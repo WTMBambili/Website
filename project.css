@@ -145,6 +145,44 @@ ul li a:hover::before{
  } 
 }
 
+/* home */
+.home {
+  display: flex;
+  margin-top: 7%;
+  justify-content: space-between;
+}
+
+.home-img {
+  width: 25%;
+  margin-right: 10%;
+}
+.home-image {
+  width: 100%;
+}
+
+.home-text {
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 25%;
+  display: grid;
+  align-items: center;
+  /* margin-top: 10%; */
+}
+
+.home-text-content {
+  height: 50%;
+  display: grid;
+}
+
+.learn-btn {
+  /* margin-top: 10%; */
+  color: white;
+  background-color: #3E7FFF;
+  width: 7.5rem;
+  height: 3rem;
+  border-radius: 10px;
+  border-color: #3E7FFF;
+}
 
 
 /* projects */
