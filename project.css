@@ -184,6 +184,43 @@ ul li a:hover::before{
   border-color: #3E7FFF;
 }
 
+/*About-Us*/
+.about-image-text{
+  display: flex;
+  margin-top: 7%;
+  justify-content: space-between;
+}
+.about-image{
+  width: 100%;
+}
+.about-img{
+  width: 25%;
+  margin-left: 10%;
+}
+.about-text{
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 1%;
+  width: 25%;
+  display: grid;
+  align-items: center;
+}
+.about-text-content{
+  height: 50%;
+  display: grid;
+
+}
+
+.About-category{
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 40px;
+  color: var(--color-text);
+  text-transform: uppercase;
+}
+
+
 
 /* projects */
 .project {
@@ -398,4 +435,43 @@ ul li a:hover::before{
 .project-category {
     font-size: 23px;
 }
+}
+
+/*Become a member */
+.Be-a-member{
+  display: flex;
+  margin-top: 7%;
+  justify-content: space-between;
+}
+
+.member-img {
+  width: 25%;
+  margin-right: 10%;
+}
+.member-image {
+  width: 100%;
+}
+
+.member-text {
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 25%;
+  display: grid;
+  align-items: center;
+  /* margin-top: 10%; */
+}
+
+.member-text-content {
+  /* height: 50%; */
+  display: grid;
+}
+
+.Reg-btn {
+  /* margin-top: 10%; */
+  color: white;
+  background-color: #3E7FFF;
+  width: 7.5rem;
+  height: 3rem;
+  border-radius: 10px;
+  border-color: #3E7FFF;
 }
