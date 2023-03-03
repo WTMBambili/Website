@@ -4,6 +4,12 @@
     2) Programming languages used will be HTML, Javascript and CSS
 # In order to contribute, 
 
+    Fork the repository 
+    Create a feature branch like "feature_hawa"
+    After making the changes, push to Github and then open a Pull request 
+    #my own branch
+
+
   Considering the fact that we are numerous and the workload is small, to ease the contribution we will proceed as follows:
   - The group lead of each group creates a branch e.g `git checkout -b feature/name_of_section`. name_of_section corresponding to the section of the website the group is working on.
   - She makes some changes(create an index.html file), commit it and opens a pull request.
@@ -11,5 +17,6 @@
   - The group leader then reviews the code, copy and paste it in her own code at the appropriate position the cleans up the branch by deleting the members' files 
 
     
+
 # Happy Coding !!!
 # Happy Coding !!!
