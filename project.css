@@ -475,3 +475,54 @@ ul li a:hover::before{
   border-radius: 10px;
   border-color: #3E7FFF;
 }
+
+/* our organizer's*/
+
+.our-organizers{
+  background-color: rgb(214, 212, 212);
+  display: flex;
+  justify-content: center;
+}
+
+.org-box{
+
+  margin-left: 2%;
+  margin-top: 6%;
+  background-color:white;
+  border-radius: 10px;
+  width: 15%;
+  height: 250px;
+  box-shadow: 0 4px 8px 0;
+  padding: 4%;
+  position: relative;
+  
+  
+}
+
+.org-box h1,p{
+  text-align: center;
+  
+}
+
+.blue-text{
+  margin-left: 30%;
+  color: #3E7FFF;
+}
+.org-image img{
+  margin-left: 8%;
+  position: absolute;
+  margin-top: -38%;
+}
+
+.org-position{
+margin-left: 8%;
+}
+
+.icons{
+   display: flex;
+  justify-content: center; 
+}
+.icons i{
+  margin: 2%;
+  color: #3E7FFF;
+}
